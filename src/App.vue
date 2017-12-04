@@ -6,7 +6,7 @@
 
       <md-content>
         <md-list>
-          <md-subheader>Wilks!</md-subheader>
+          <md-subheader>Calculated Wilks!</md-subheader>
           <md-list-item>
             <h2 class="md-display-2">{{ calcWilks() }}</h2>
           </md-list-item>
@@ -51,7 +51,9 @@
 
           <md-tabs md-dynamic-height>
             <md-tab md-label="Wilks">
+              <img src="./assets/weakwilks-logo.png" class="logo" />
               <p>The Wilks Coefficient is way of comparing powerlifters of different bodyweights and sexes in a more or less fair way. You can read more about the <a href="https://en.wikipedia.org/wiki/Wilks_Coefficient">Wilks Coefficient here</a>.</p>
+
             </md-tab>
 
             <md-tab md-label="This App">
@@ -171,5 +173,9 @@
 
   .profile-image {
     @include circle-image(150px);
+  }
+  .logo {
+    width: 200px;
+    height: auto;
   }
 </style>
