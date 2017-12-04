@@ -1,6 +1,6 @@
-# weakwilksmd2
+# WeakWilks
 
-> A Vue.js project
+> Calulates a powerlifter's Wilks score. A project to learn Vue.js and vue-materialize.
 
 ## Build Setup
 
