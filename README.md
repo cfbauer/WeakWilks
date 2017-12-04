@@ -4,7 +4,7 @@ Calulates a powerlifter's Wilks score and has fun doing it. A project to learn V
 
 ## Website
 
-Checkout dat app at [WeakWWilks.com](htp://weakwilks.com).
+Checkout dat app at [WeakWilks.com](http://weakwilks.com).
 
 ## Build Setup
 
