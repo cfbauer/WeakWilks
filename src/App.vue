@@ -58,7 +58,7 @@
 
             <md-tab md-label="This App">
               <img src="./assets/chris-bauer.jpg" class="profile-image" />
-              <p>This app was made by Chris Bauer to practice Javascript and Vue.js.</p>
+              <p>This app was made by Chris Bauer to practice <a href="https://vuejs.org/">Vue.js</a> and <a href="https://vuematerial.io/">vue-material</a>.</p>
             </md-tab>
           </md-tabs>
           <md-dialog-actions>
