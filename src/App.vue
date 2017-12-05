@@ -10,8 +10,6 @@
           <md-list-item>
             <h2 class="md-display-2">{{ calcWilks() }}</h2>
           </md-list-item>
-
-          <md-subheader>Weight</md-subheader>
           <md-list-item>
             <md-field>
               <label>Bodyweight</label>
