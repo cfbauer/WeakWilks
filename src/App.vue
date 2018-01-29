@@ -1,14 +1,40 @@
 <template>
   <div class="page-container md-layout-column">
-    <md-app>
-      <md-app-toolbar class="md-primary">
-        <h1 class="md-title">Weak Wilks</h1>
-      </md-app-toolbar>
-      <md-app-content>
-        <router-view></router-view>
-      </md-app-content>
 
-      <md-app-button class="md-accent" @click="showDialog = true">About Weak Wilks</md-app-button>
+      <md-toolbar class="md-primary">
+        <md-button class="md-icon-button" @click="showNavigation = true">
+          <md-icon>menu</md-icon>
+        </md-button>
+        <h1 class="md-title">Weak Wilks</h1>
+      </md-toolbar>
+
+      <md-drawer :md-active.sync="showNavigation">
+        <md-toolbar class="md-transparent" md-elevation="0">
+          <span class="md-title">Weak Wilks</span>
+        </md-toolbar>
+
+        <md-list>
+          <md-list-item>
+            <router-link to="/" v-on:click.native="showNavigation = false">
+              <md-icon>send</md-icon>
+              <span class="md-list-item-text">Wilks</span>
+            </router-link>
+          </md-list-item>
+          <md-list-item>
+            <router-link to="/lbs-kgs-converter" v-on:click.native="showNavigation = false">
+              <md-icon>person</md-icon>
+              <span class="md-list-item-text">About</span>
+            </router-link>
+          </md-list-item>
+        </md-list>
+    </md-drawer>
+
+      <md-content>
+        <router-view></router-view>
+      </md-content>
+
+
+      <md-button class="md-accent" @click="showDialog = true">About Weak Wilks</md-button>
 
       <md-dialog :md-active.sync="showDialog">
         <md-dialog-title>Preferences</md-dialog-title>
@@ -29,7 +55,7 @@
           <md-button class="md-primary" @click="showDialog = false">Close</md-button>
         </md-dialog-actions>
       </md-dialog>
-    </md-app>
+
   </div>
 </template>
 
@@ -38,6 +64,7 @@
     data: function() {
       return {
         showDialog: false,
+        showNavigation: false,
       }
     }
   }
