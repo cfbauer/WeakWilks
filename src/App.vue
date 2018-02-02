@@ -15,21 +15,21 @@
 
         <md-list>
           <md-list-item>
+            <md-icon>fitness_center</md-icon>
             <router-link to="/" v-on:click.native="showNavigation = false">
-              <md-icon>fitness_center</md-icon>
               <span class="md-list-item-text">Wilks</span>
             </router-link>
           </md-list-item>
           <md-list-item>
+            <md-icon>forward</md-icon>
             <router-link to="/lbs-kgs-converter" v-on:click.native="showNavigation = false">
-              <md-icon>forward</md-icon>
               <span class="md-list-item-text">Converter</span>
             </router-link>
           </md-list-item>
 
           <md-list-item>
+            <md-icon>person</md-icon>
             <router-link to="/lbs-kgs-converter" v-on:click.native="showNavigation = false; showDialog = true;">
-              <md-icon>person</md-icon>
               <span class="md-list-item-text">About</span>
             </router-link>
           </md-list-item>
@@ -122,5 +122,12 @@
   .logo {
     width: 200px;
     height: auto;
+  }
+
+  .md-drawer .md-list-item-content {
+    justify-content: flex-start;
+    a:hover {
+      text-decoration: none;
+    }
   }
 </style>
