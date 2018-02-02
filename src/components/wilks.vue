@@ -1,5 +1,5 @@
 <template>
-  <div class="page-container md-layout-column">
+  <div>
       <md-list>
         <md-subheader>Calculated Wilks!</md-subheader>
         <md-list-item>
@@ -35,7 +35,7 @@
           <md-radio v-model="sex" value="female">Female</md-radio>
         </md-list-item>
 
-      </md-list>  
+      </md-list>
   </div>
 </template>
 
@@ -95,8 +95,6 @@
     }
   }
 </script>
-
-<!-- <style src="../node_modules/vue-material/dist/vue-material.css"></style> -->
 
 <style lang="scss">
 
